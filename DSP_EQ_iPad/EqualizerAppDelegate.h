@@ -13,6 +13,7 @@
     float level;
     int current1;
     
+    
 }
 
 @property (strong, nonatomic) UIWindow *window;
