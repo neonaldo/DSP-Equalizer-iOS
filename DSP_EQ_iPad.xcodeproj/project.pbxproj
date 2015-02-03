@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D40A85C51910857C00C64BCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40A85C41910857C00C64BCB /* Foundation.framework */; };
+		D40A85C71910857C00C64BCB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40A85C61910857C00C64BCB /* CoreGraphics.framework */; };
+		D40A85C91910857C00C64BCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40A85C81910857C00C64BCB /* UIKit.framework */; };
+		D40A85CF1910857C00C64BCB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D40A85CD1910857C00C64BCB /* InfoPlist.strings */; };
+		D40A85D11910857C00C64BCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A85D01910857C00C64BCB /* main.m */; };
+		D40A85D51910857D00C64BCB /* EqualizerAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D40A85D41910857D00C64BCB /* EqualizerAppDelegate.mm */; };
+		D40A85D81910857D00C64BCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40A85D61910857D00C64BCB /* Main.storyboard */; };
+		D40A85DB1910857D00C64BCB /* EqualizerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D40A85DA1910857D00C64BCB /* EqualizerViewController.mm */; };
+		D40A85DD1910857D00C64BCB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D40A85DC1910857D00C64BCB /* Images.xcassets */; };
+		D40A85E41910857D00C64BCB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40A85E31910857D00C64BCB /* XCTest.framework */; };
+		D40A85E51910857D00C64BCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40A85C41910857C00C64BCB /* Foundation.framework */; };
+		D40A85E61910857D00C64BCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40A85C81910857C00C64BCB /* UIKit.framework */; };
+		D40A85EE1910857D00C64BCB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D40A85EC1910857D00C64BCB /* InfoPlist.strings */; };
+		D40A85F01910857D00C64BCB /* DSP_EQ_iPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A85EF1910857D00C64BCB /* DSP_EQ_iPadTests.m */; };
+		D40A8617191085CA00C64BCB /* NVAllpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A85FB191085CA00C64BCB /* NVAllpassFilter.m */; };
+		D40A8618191085CA00C64BCB /* NVBandpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A85FD191085CA00C64BCB /* NVBandpassFilter.m */; };
+		D40A8619191085CA00C64BCB /* NVBandpassQPeakGainFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A85FF191085CA00C64BCB /* NVBandpassQPeakGainFilter.m */; };
+		D40A861A191085CA00C64BCB /* NVHighpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A8601191085CA00C64BCB /* NVHighpassFilter.m */; };
+		D40A861B191085CA00C64BCB /* NVHighShelvingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A8603191085CA00C64BCB /* NVHighShelvingFilter.m */; };
+		D40A861C191085CA00C64BCB /* NVLowpassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A8605191085CA00C64BCB /* NVLowpassFilter.m */; };
+		D40A861D191085CA00C64BCB /* NVLowShelvingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A8607191085CA00C64BCB /* NVLowShelvingFilter.m */; };
+		D40A861E191085CA00C64BCB /* NVNotchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A8609191085CA00C64BCB /* NVNotchFilter.m */; };
+		D40A861F191085CA00C64BCB /* NVPeakingEQFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A860B191085CA00C64BCB /* NVPeakingEQFilter.m */; };
+		D40A8620191085CA00C64BCB /* AudioFileReader.mm in Sources */ = {isa = PBXBuildFile; fileRef = D40A860E191085CA00C64BCB /* AudioFileReader.mm */; };
+		D40A8621191085CA00C64BCB /* AudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A8610191085CA00C64BCB /* AudioFileWriter.m */; };
+		D40A8622191085CA00C64BCB /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A8612191085CA00C64BCB /* Novocaine.m */; };
+		D40A8623191085CA00C64BCB /* RingBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = D40A8614191085CA00C64BCB /* RingBuffer.mm */; };
+		D40A8624191085CA00C64BCB /* NVDSP.mm in Sources */ = {isa = PBXBuildFile; fileRef = D40A8616191085CA00C64BCB /* NVDSP.mm */; };
+		D40A8626191088AD00C64BCB /* 07 Runaway.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D40A8625191088AD00C64BCB /* 07 Runaway.mp3 */; };
+		D40A862C191093B700C64BCB /* NVClippingDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A8629191093B700C64BCB /* NVClippingDetection.m */; };
+		D40A862D191093B700C64BCB /* NVSoundLevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A862B191093B700C64BCB /* NVSoundLevelMeter.m */; };
+		D4ED5BB119178C410011570D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ED5BB019178C410011570D /* QuartzCore.framework */; };
+		D4ED5BB419178C7A0011570D /* visualizerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4ED5BB319178C7A0011570D /* visualizerView.mm */; };
+		D4ED5BB619178D3F0011570D /* particleTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = D4ED5BB519178D3F0011570D /* particleTexture.png */; };
+		D4ED5BB8191B110A0011570D /* 13 99 Red Balloons.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4ED5BB7191B110A0011570D /* 13 99 Red Balloons.mp3 */; };
+		D4ED5BBB191B13900011570D /* 01 Paradise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4ED5BBA191B13900011570D /* 01 Paradise.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D40A85E71910857D00C64BCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D40A85B91910857C00C64BCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D40A85C01910857C00C64BCB;
+			remoteInfo = DSP_EQ_iPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D40A85C11910857C00C64BCB /* DSP_EQ_iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSP_EQ_iPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40A85C41910857C00C64BCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D40A85C61910857C00C64BCB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D40A85C81910857C00C64BCB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D40A85CC1910857C00C64BCB /* DSP_EQ_iPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DSP_EQ_iPad-Info.plist"; sourceTree = "<group>"; };
+		D40A85CE1910857C00C64BCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D40A85D01910857C00C64BCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D40A85D21910857C00C64BCB /* DSP_EQ_iPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSP_EQ_iPad-Prefix.pch"; sourceTree = "<group>"; };
+		D40A85D31910857C00C64BCB /* EqualizerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EqualizerAppDelegate.h; sourceTree = "<group>"; };
+		D40A85D41910857D00C64BCB /* EqualizerAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EqualizerAppDelegate.mm; sourceTree = "<group>"; };
+		D40A85D71910857D00C64BCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D40A85D91910857D00C64BCB /* EqualizerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EqualizerViewController.h; sourceTree = "<group>"; };
+		D40A85DA1910857D00C64BCB /* EqualizerViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EqualizerViewController.mm; sourceTree = "<group>"; };
+		D40A85DC1910857D00C64BCB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D40A85E21910857D00C64BCB /* DSP_EQ_iPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSP_EQ_iPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40A85E31910857D00C64BCB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D40A85EB1910857D00C64BCB /* DSP_EQ_iPadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DSP_EQ_iPadTests-Info.plist"; sourceTree = "<group>"; };
+		D40A85ED1910857D00C64BCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D40A85EF1910857D00C64BCB /* DSP_EQ_iPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSP_EQ_iPadTests.m; sourceTree = "<group>"; };
+		D40A85FA191085CA00C64BCB /* NVAllpassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVAllpassFilter.h; sourceTree = "<group>"; };
+		D40A85FB191085CA00C64BCB /* NVAllpassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVAllpassFilter.m; sourceTree = "<group>"; };
+		D40A85FC191085CA00C64BCB /* NVBandpassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVBandpassFilter.h; sourceTree = "<group>"; };
+		D40A85FD191085CA00C64BCB /* NVBandpassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVBandpassFilter.m; sourceTree = "<group>"; };
+		D40A85FE191085CA00C64BCB /* NVBandpassQPeakGainFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVBandpassQPeakGainFilter.h; sourceTree = "<group>"; };
+		D40A85FF191085CA00C64BCB /* NVBandpassQPeakGainFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVBandpassQPeakGainFilter.m; sourceTree = "<group>"; };
+		D40A8600191085CA00C64BCB /* NVHighpassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVHighpassFilter.h; sourceTree = "<group>"; };
+		D40A8601191085CA00C64BCB /* NVHighpassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVHighpassFilter.m; sourceTree = "<group>"; };
+		D40A8602191085CA00C64BCB /* NVHighShelvingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVHighShelvingFilter.h; sourceTree = "<group>"; };
+		D40A8603191085CA00C64BCB /* NVHighShelvingFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVHighShelvingFilter.m; sourceTree = "<group>"; };
+		D40A8604191085CA00C64BCB /* NVLowpassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVLowpassFilter.h; sourceTree = "<group>"; };
+		D40A8605191085CA00C64BCB /* NVLowpassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVLowpassFilter.m; sourceTree = "<group>"; };
+		D40A8606191085CA00C64BCB /* NVLowShelvingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVLowShelvingFilter.h; sourceTree = "<group>"; };
+		D40A8607191085CA00C64BCB /* NVLowShelvingFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVLowShelvingFilter.m; sourceTree = "<group>"; };
+		D40A8608191085CA00C64BCB /* NVNotchFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVNotchFilter.h; sourceTree = "<group>"; };
+		D40A8609191085CA00C64BCB /* NVNotchFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVNotchFilter.m; sourceTree = "<group>"; };
+		D40A860A191085CA00C64BCB /* NVPeakingEQFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVPeakingEQFilter.h; sourceTree = "<group>"; };
+		D40A860B191085CA00C64BCB /* NVPeakingEQFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVPeakingEQFilter.m; sourceTree = "<group>"; };
+		D40A860D191085CA00C64BCB /* AudioFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileReader.h; sourceTree = "<group>"; };
+		D40A860E191085CA00C64BCB /* AudioFileReader.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioFileReader.mm; sourceTree = "<group>"; };
+		D40A860F191085CA00C64BCB /* AudioFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileWriter.h; sourceTree = "<group>"; };
+		D40A8610191085CA00C64BCB /* AudioFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileWriter.m; sourceTree = "<group>"; };
+		D40A8611191085CA00C64BCB /* Novocaine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Novocaine.h; sourceTree = "<group>"; };
+		D40A8612191085CA00C64BCB /* Novocaine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Novocaine.m; sourceTree = "<group>"; };
+		D40A8613191085CA00C64BCB /* RingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RingBuffer.h; sourceTree = "<group>"; };
+		D40A8614191085CA00C64BCB /* RingBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RingBuffer.mm; sourceTree = "<group>"; };
+		D40A8615191085CA00C64BCB /* NVDSP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVDSP.h; sourceTree = "<group>"; };
+		D40A8616191085CA00C64BCB /* NVDSP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NVDSP.mm; sourceTree = "<group>"; };
+		D40A8625191088AD00C64BCB /* 07 Runaway.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 Runaway.mp3"; sourceTree = "<group>"; };
+		D40A8628191093B700C64BCB /* NVClippingDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVClippingDetection.h; sourceTree = "<group>"; };
+		D40A8629191093B700C64BCB /* NVClippingDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVClippingDetection.m; sourceTree = "<group>"; };
+		D40A862A191093B700C64BCB /* NVSoundLevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVSoundLevelMeter.h; sourceTree = "<group>"; };
+		D40A862B191093B700C64BCB /* NVSoundLevelMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVSoundLevelMeter.m; sourceTree = "<group>"; };
+		D4ED5BB019178C410011570D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D4ED5BB219178C7A0011570D /* visualizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = visualizerView.h; sourceTree = "<group>"; };
+		D4ED5BB319178C7A0011570D /* visualizerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = visualizerView.mm; sourceTree = "<group>"; };
+		D4ED5BB519178D3F0011570D /* particleTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particleTexture.png; sourceTree = "<group>"; };
+		D4ED5BB7191B110A0011570D /* 13 99 Red Balloons.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13 99 Red Balloons.mp3"; sourceTree = "<group>"; };
+		D4ED5BBA191B13900011570D /* 01 Paradise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 Paradise.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D40A85BE1910857C00C64BCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4ED5BB119178C410011570D /* QuartzCore.framework in Frameworks */,
+				D40A85C71910857C00C64BCB /* CoreGraphics.framework in Frameworks */,
+				D40A85C91910857C00C64BCB /* UIKit.framework in Frameworks */,
+				D40A85C51910857C00C64BCB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40A85DF1910857D00C64BCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40A85E41910857D00C64BCB /* XCTest.framework in Frameworks */,
+				D40A85E61910857D00C64BCB /* UIKit.framework in Frameworks */,
+				D40A85E51910857D00C64BCB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D40A85B81910857C00C64BCB = {
+			isa = PBXGroup;
+			children = (
+				D4ED5BB219178C7A0011570D /* visualizerView.h */,
+				D4ED5BB319178C7A0011570D /* visualizerView.mm */,
+				D40A8627191093B700C64BCB /* Utilities */,
+				D40A8625191088AD00C64BCB /* 07 Runaway.mp3 */,
+				D4ED5BB7191B110A0011570D /* 13 99 Red Balloons.mp3 */,
+				D4ED5BBA191B13900011570D /* 01 Paradise.mp3 */,
+				D40A85F9191085CA00C64BCB /* Filters */,
+				D40A860C191085CA00C64BCB /* Novocaine */,
+				D40A8615191085CA00C64BCB /* NVDSP.h */,
+				D40A8616191085CA00C64BCB /* NVDSP.mm */,
+				D40A85CA1910857C00C64BCB /* DSP_EQ_iPad */,
+				D40A85E91910857D00C64BCB /* DSP_EQ_iPadTests */,
+				D40A85C31910857C00C64BCB /* Frameworks */,
+				D40A85C21910857C00C64BCB /* Products */,
+				D4ED5BB519178D3F0011570D /* particleTexture.png */,
+			);
+			sourceTree = "<group>";
+		};
+		D40A85C21910857C00C64BCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D40A85C11910857C00C64BCB /* DSP_EQ_iPad.app */,
+				D40A85E21910857D00C64BCB /* DSP_EQ_iPadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D40A85C31910857C00C64BCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4ED5BB019178C410011570D /* QuartzCore.framework */,
+				D40A85C41910857C00C64BCB /* Foundation.framework */,
+				D40A85C61910857C00C64BCB /* CoreGraphics.framework */,
+				D40A85C81910857C00C64BCB /* UIKit.framework */,
+				D40A85E31910857D00C64BCB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D40A85CA1910857C00C64BCB /* DSP_EQ_iPad */ = {
+			isa = PBXGroup;
+			children = (
+				D40A85D31910857C00C64BCB /* EqualizerAppDelegate.h */,
+				D40A85D41910857D00C64BCB /* EqualizerAppDelegate.mm */,
+				D40A85D61910857D00C64BCB /* Main.storyboard */,
+				D40A85D91910857D00C64BCB /* EqualizerViewController.h */,
+				D40A85DA1910857D00C64BCB /* EqualizerViewController.mm */,
+				D40A85DC1910857D00C64BCB /* Images.xcassets */,
+				D40A85CB1910857C00C64BCB /* Supporting Files */,
+			);
+			path = DSP_EQ_iPad;
+			sourceTree = "<group>";
+		};
+		D40A85CB1910857C00C64BCB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D40A85CC1910857C00C64BCB /* DSP_EQ_iPad-Info.plist */,
+				D40A85CD1910857C00C64BCB /* InfoPlist.strings */,
+				D40A85D01910857C00C64BCB /* main.m */,
+				D40A85D21910857C00C64BCB /* DSP_EQ_iPad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D40A85E91910857D00C64BCB /* DSP_EQ_iPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				D40A85EF1910857D00C64BCB /* DSP_EQ_iPadTests.m */,
+				D40A85EA1910857D00C64BCB /* Supporting Files */,
+			);
+			path = DSP_EQ_iPadTests;
+			sourceTree = "<group>";
+		};
+		D40A85EA1910857D00C64BCB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D40A85EB1910857D00C64BCB /* DSP_EQ_iPadTests-Info.plist */,
+				D40A85EC1910857D00C64BCB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D40A85F9191085CA00C64BCB /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				D40A85FA191085CA00C64BCB /* NVAllpassFilter.h */,
+				D40A85FB191085CA00C64BCB /* NVAllpassFilter.m */,
+				D40A85FC191085CA00C64BCB /* NVBandpassFilter.h */,
+				D40A85FD191085CA00C64BCB /* NVBandpassFilter.m */,
+				D40A85FE191085CA00C64BCB /* NVBandpassQPeakGainFilter.h */,
+				D40A85FF191085CA00C64BCB /* NVBandpassQPeakGainFilter.m */,
+				D40A8600191085CA00C64BCB /* NVHighpassFilter.h */,
+				D40A8601191085CA00C64BCB /* NVHighpassFilter.m */,
+				D40A8602191085CA00C64BCB /* NVHighShelvingFilter.h */,
+				D40A8603191085CA00C64BCB /* NVHighShelvingFilter.m */,
+				D40A8604191085CA00C64BCB /* NVLowpassFilter.h */,
+				D40A8605191085CA00C64BCB /* NVLowpassFilter.m */,
+				D40A8606191085CA00C64BCB /* NVLowShelvingFilter.h */,
+				D40A8607191085CA00C64BCB /* NVLowShelvingFilter.m */,
+				D40A8608191085CA00C64BCB /* NVNotchFilter.h */,
+				D40A8609191085CA00C64BCB /* NVNotchFilter.m */,
+				D40A860A191085CA00C64BCB /* NVPeakingEQFilter.h */,
+				D40A860B191085CA00C64BCB /* NVPeakingEQFilter.m */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		D40A860C191085CA00C64BCB /* Novocaine */ = {
+			isa = PBXGroup;
+			children = (
+				D40A860D191085CA00C64BCB /* AudioFileReader.h */,
+				D40A860E191085CA00C64BCB /* AudioFileReader.mm */,
+				D40A860F191085CA00C64BCB /* AudioFileWriter.h */,
+				D40A8610191085CA00C64BCB /* AudioFileWriter.m */,
+				D40A8611191085CA00C64BCB /* Novocaine.h */,
+				D40A8612191085CA00C64BCB /* Novocaine.m */,
+				D40A8613191085CA00C64BCB /* RingBuffer.h */,
+				D40A8614191085CA00C64BCB /* RingBuffer.mm */,
+			);
+			path = Novocaine;
+			sourceTree = "<group>";
+		};
+		D40A8627191093B700C64BCB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D40A8628191093B700C64BCB /* NVClippingDetection.h */,
+				D40A8629191093B700C64BCB /* NVClippingDetection.m */,
+				D40A862A191093B700C64BCB /* NVSoundLevelMeter.h */,
+				D40A862B191093B700C64BCB /* NVSoundLevelMeter.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D40A85C01910857C00C64BCB /* DSP_EQ_iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D40A85F31910857D00C64BCB /* Build configuration list for PBXNativeTarget "DSP_EQ_iPad" */;
+			buildPhases = (
+				D40A85BD1910857C00C64BCB /* Sources */,
+				D40A85BE1910857C00C64BCB /* Frameworks */,
+				D40A85BF1910857C00C64BCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSP_EQ_iPad;
+			productName = DSP_EQ_iPad;
+			productReference = D40A85C11910857C00C64BCB /* DSP_EQ_iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D40A85E11910857D00C64BCB /* DSP_EQ_iPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D40A85F61910857D00C64BCB /* Build configuration list for PBXNativeTarget "DSP_EQ_iPadTests" */;
+			buildPhases = (
+				D40A85DE1910857D00C64BCB /* Sources */,
+				D40A85DF1910857D00C64BCB /* Frameworks */,
+				D40A85E01910857D00C64BCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D40A85E81910857D00C64BCB /* PBXTargetDependency */,
+			);
+			name = DSP_EQ_iPadTests;
+			productName = DSP_EQ_iPadTests;
+			productReference = D40A85E21910857D00C64BCB /* DSP_EQ_iPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D40A85B91910857C00C64BCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Equalizer;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Joey La Barck";
+				TargetAttributes = {
+					D40A85E11910857D00C64BCB = {
+						TestTargetID = D40A85C01910857C00C64BCB;
+					};
+				};
+			};
+			buildConfigurationList = D40A85BC1910857C00C64BCB /* Build configuration list for PBXProject "DSP_EQ_iPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D40A85B81910857C00C64BCB;
+			productRefGroup = D40A85C21910857C00C64BCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D40A85C01910857C00C64BCB /* DSP_EQ_iPad */,
+				D40A85E11910857D00C64BCB /* DSP_EQ_iPadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D40A85BF1910857C00C64BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40A85DD1910857D00C64BCB /* Images.xcassets in Resources */,
+				D4ED5BB8191B110A0011570D /* 13 99 Red Balloons.mp3 in Resources */,
+				D4ED5BB619178D3F0011570D /* particleTexture.png in Resources */,
+				D40A85CF1910857C00C64BCB /* InfoPlist.strings in Resources */,
+				D40A8626191088AD00C64BCB /* 07 Runaway.mp3 in Resources */,
+				D4ED5BBB191B13900011570D /* 01 Paradise.mp3 in Resources */,
+				D40A85D81910857D00C64BCB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40A85E01910857D00C64BCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40A85EE1910857D00C64BCB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D40A85BD1910857C00C64BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40A861C191085CA00C64BCB /* NVLowpassFilter.m in Sources */,
+				D40A861A191085CA00C64BCB /* NVHighpassFilter.m in Sources */,
+				D40A85DB1910857D00C64BCB /* EqualizerViewController.mm in Sources */,
+				D40A85D11910857C00C64BCB /* main.m in Sources */,
+				D4ED5BB419178C7A0011570D /* visualizerView.mm in Sources */,
+				D40A861D191085CA00C64BCB /* NVLowShelvingFilter.m in Sources */,
+				D40A8620191085CA00C64BCB /* AudioFileReader.mm in Sources */,
+				D40A861E191085CA00C64BCB /* NVNotchFilter.m in Sources */,
+				D40A861B191085CA00C64BCB /* NVHighShelvingFilter.m in Sources */,
+				D40A8618191085CA00C64BCB /* NVBandpassFilter.m in Sources */,
+				D40A8619191085CA00C64BCB /* NVBandpassQPeakGainFilter.m in Sources */,
+				D40A861F191085CA00C64BCB /* NVPeakingEQFilter.m in Sources */,
+				D40A8617191085CA00C64BCB /* NVAllpassFilter.m in Sources */,
+				D40A85D51910857D00C64BCB /* EqualizerAppDelegate.mm in Sources */,
+				D40A8621191085CA00C64BCB /* AudioFileWriter.m in Sources */,
+				D40A8624191085CA00C64BCB /* NVDSP.mm in Sources */,
+				D40A8622191085CA00C64BCB /* Novocaine.m in Sources */,
+				D40A862D191093B700C64BCB /* NVSoundLevelMeter.m in Sources */,
+				D40A8623191085CA00C64BCB /* RingBuffer.mm in Sources */,
+				D40A862C191093B700C64BCB /* NVClippingDetection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40A85DE1910857D00C64BCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40A85F01910857D00C64BCB /* DSP_EQ_iPadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D40A85E81910857D00C64BCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D40A85C01910857C00C64BCB /* DSP_EQ_iPad */;
+			targetProxy = D40A85E71910857D00C64BCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D40A85CD1910857C00C64BCB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D40A85CE1910857C00C64BCB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D40A85D61910857D00C64BCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D40A85D71910857D00C64BCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D40A85EC1910857D00C64BCB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D40A85ED1910857D00C64BCB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D40A85F11910857D00C64BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D40A85F21910857D00C64BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D40A85F41910857D00C64BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSP_EQ_iPad/DSP_EQ_iPad-Prefix.pch";
+				INFOPLIST_FILE = "DSP_EQ_iPad/DSP_EQ_iPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D40A85F51910857D00C64BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSP_EQ_iPad/DSP_EQ_iPad-Prefix.pch";
+				INFOPLIST_FILE = "DSP_EQ_iPad/DSP_EQ_iPad-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D40A85F71910857D00C64BCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DSP_EQ_iPad.app/DSP_EQ_iPad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSP_EQ_iPad/DSP_EQ_iPad-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DSP_EQ_iPadTests/DSP_EQ_iPadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D40A85F81910857D00C64BCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DSP_EQ_iPad.app/DSP_EQ_iPad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSP_EQ_iPad/DSP_EQ_iPad-Prefix.pch";
+				INFOPLIST_FILE = "DSP_EQ_iPadTests/DSP_EQ_iPadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D40A85BC1910857C00C64BCB /* Build configuration list for PBXProject "DSP_EQ_iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40A85F11910857D00C64BCB /* Debug */,
+				D40A85F21910857D00C64BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D40A85F31910857D00C64BCB /* Build configuration list for PBXNativeTarget "DSP_EQ_iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40A85F41910857D00C64BCB /* Debug */,
+				D40A85F51910857D00C64BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D40A85F61910857D00C64BCB /* Build configuration list for PBXNativeTarget "DSP_EQ_iPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D40A85F71910857D00C64BCB /* Debug */,
+				D40A85F81910857D00C64BCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D40A85B91910857C00C64BCB /* Project object */;
+}
