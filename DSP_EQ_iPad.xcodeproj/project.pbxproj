@@ -35,14 +35,11 @@
 		D40A8622191085CA00C64BCB /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A8612191085CA00C64BCB /* Novocaine.m */; };
 		D40A8623191085CA00C64BCB /* RingBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = D40A8614191085CA00C64BCB /* RingBuffer.mm */; };
 		D40A8624191085CA00C64BCB /* NVDSP.mm in Sources */ = {isa = PBXBuildFile; fileRef = D40A8616191085CA00C64BCB /* NVDSP.mm */; };
-		D40A8626191088AD00C64BCB /* 07 Runaway.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D40A8625191088AD00C64BCB /* 07 Runaway.mp3 */; };
 		D40A862C191093B700C64BCB /* NVClippingDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A8629191093B700C64BCB /* NVClippingDetection.m */; };
 		D40A862D191093B700C64BCB /* NVSoundLevelMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = D40A862B191093B700C64BCB /* NVSoundLevelMeter.m */; };
 		D4ED5BB119178C410011570D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ED5BB019178C410011570D /* QuartzCore.framework */; };
 		D4ED5BB419178C7A0011570D /* visualizerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4ED5BB319178C7A0011570D /* visualizerView.mm */; };
 		D4ED5BB619178D3F0011570D /* particleTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = D4ED5BB519178D3F0011570D /* particleTexture.png */; };
-		D4ED5BB8191B110A0011570D /* 13 99 Red Balloons.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4ED5BB7191B110A0011570D /* 13 99 Red Balloons.mp3 */; };
-		D4ED5BBB191B13900011570D /* 01 Paradise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4ED5BBA191B13900011570D /* 01 Paradise.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,7 +100,6 @@
 		D40A8614191085CA00C64BCB /* RingBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RingBuffer.mm; sourceTree = "<group>"; };
 		D40A8615191085CA00C64BCB /* NVDSP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVDSP.h; sourceTree = "<group>"; };
 		D40A8616191085CA00C64BCB /* NVDSP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NVDSP.mm; sourceTree = "<group>"; };
-		D40A8625191088AD00C64BCB /* 07 Runaway.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 Runaway.mp3"; sourceTree = "<group>"; };
 		D40A8628191093B700C64BCB /* NVClippingDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVClippingDetection.h; sourceTree = "<group>"; };
 		D40A8629191093B700C64BCB /* NVClippingDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVClippingDetection.m; sourceTree = "<group>"; };
 		D40A862A191093B700C64BCB /* NVSoundLevelMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVSoundLevelMeter.h; sourceTree = "<group>"; };
@@ -112,8 +108,6 @@
 		D4ED5BB219178C7A0011570D /* visualizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = visualizerView.h; sourceTree = "<group>"; };
 		D4ED5BB319178C7A0011570D /* visualizerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = visualizerView.mm; sourceTree = "<group>"; };
 		D4ED5BB519178D3F0011570D /* particleTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particleTexture.png; sourceTree = "<group>"; };
-		D4ED5BB7191B110A0011570D /* 13 99 Red Balloons.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13 99 Red Balloons.mp3"; sourceTree = "<group>"; };
-		D4ED5BBA191B13900011570D /* 01 Paradise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 Paradise.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,9 +141,6 @@
 				D4ED5BB219178C7A0011570D /* visualizerView.h */,
 				D4ED5BB319178C7A0011570D /* visualizerView.mm */,
 				D40A8627191093B700C64BCB /* Utilities */,
-				D40A8625191088AD00C64BCB /* 07 Runaway.mp3 */,
-				D4ED5BB7191B110A0011570D /* 13 99 Red Balloons.mp3 */,
-				D4ED5BBA191B13900011570D /* 01 Paradise.mp3 */,
 				D40A85F9191085CA00C64BCB /* Filters */,
 				D40A860C191085CA00C64BCB /* Novocaine */,
 				D40A8615191085CA00C64BCB /* NVDSP.h */,
@@ -355,11 +346,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D40A85DD1910857D00C64BCB /* Images.xcassets in Resources */,
-				D4ED5BB8191B110A0011570D /* 13 99 Red Balloons.mp3 in Resources */,
 				D4ED5BB619178D3F0011570D /* particleTexture.png in Resources */,
 				D40A85CF1910857C00C64BCB /* InfoPlist.strings in Resources */,
-				D40A8626191088AD00C64BCB /* 07 Runaway.mp3 in Resources */,
-				D4ED5BBB191B13900011570D /* 01 Paradise.mp3 in Resources */,
 				D40A85D81910857D00C64BCB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
